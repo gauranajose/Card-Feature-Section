@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+h1, h2 {
+    font-size: 1em;
+}
+
+p {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);;
+    font-size: 12px;
+}
+
+header {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    font-size: 24px;
+}
+
+.cards {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .row {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .row .card {
+    background-color: #FFF;
+    padding: 30px 20px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 5px 20px rgb(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.cards .row .card h1 {
+    color: hsl(234, 12%, 34%);
+}
+
+.cards .row .card p {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.cards .row .card img {
+    width: 50px;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.cards .row .card.cyan {
+    border-top: hsl(180, 62%, 55%) solid 3px;
+}
+
+.cards .row .card.red {
+    border-top: hsl(0, 78%, 62%) solid 3px;
+}
+
+.cards .row .card.orange {
+    border-top: hsl(34, 97%, 64%) solid 3px;
+}
+
+.cards .row .card.blue {
+    border-top: hsl(212, 86%, 64%) solid 3px;
+}
+
+@media (max-width: 700px) {
+    header {
+        width: 100%;
+        margin-top: 50px;
+        padding: 20px 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards .row {
+        width: 100%;
+    }
+
+    .cards .row .card {
+        margin: 10px 30px;
+    }
+}
